@@ -12,7 +12,7 @@ use alloy_evm::{
 	},
 };
 use alloy_genesis::{Genesis, GenesisAccount};
-use alloy_primitives::{Address, Bytes, U256, address, hex};
+use alloy_primitives::{Address, Bytes, FixedBytes, U256, address, fixed_bytes, hex};
 use reth_ethereum::{
 	EthPrimitives,
 	chainspec::{Chain, ChainSpec},
@@ -119,8 +119,8 @@ pub fn prague_custom() -> &'static Precompiles {
 /// Fixed address for some stateful system contract.
 const STATEFUL_SYS_ADDR: Address = address!("0x0000000000000000000000000000000000000999");
 
-const ALICE_SK: [u8; 32] =
-	hex!("0x379ddd8c5ae9d1c479160e710e3f8a8c20c3c55d5cacc4cb51599c23bdb128c6");
+const ALICE_SK: FixedBytes<32> =
+	fixed_bytes!("0x379ddd8c5ae9d1c479160e710e3f8a8c20c3c55d5cacc4cb51599c23bdb128c6");
 const ALICE_ADDR: Address = address!("0x61C358A8d071451e16eDbA56e9fBF40fE6974B19");
 
 fn genesis_with_stateful_system_contract() -> Genesis {
@@ -145,7 +145,7 @@ fn genesis_with_stateful_system_contract() -> Genesis {
 			balance: U256::from(1_000_000_000_000_000_000_u128),
 			code: None,
 			storage: None,
-			private_key: Some(ALICE_SK.into()),
+			private_key: Some(ALICE_SK),
 		},
 	);
 	genesis
