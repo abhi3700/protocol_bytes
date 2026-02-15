@@ -5,7 +5,7 @@
 Ideally we could run a Anvil node. But the following modifications won't be possible. And that's why we use reth.
 
 - Add new precompile at a contract address with custom runtime bytecode.
-- Customize base_fee.
+- Customize `base_fee_per_gas`.
 - Add a new EOA with a pre-funded balance at genesis.
 
 ## Run
