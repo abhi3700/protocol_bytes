@@ -4,8 +4,8 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-reth-ethereum = { git = "https://github.com/paradigmxyz/reth.git", rev = "b25f32a977b489f9b84254c7811a2a5a25a81369", features = ["test-utils", "node", "evm", "pool"] }
-reth-tracing = {  git = "https://github.com/paradigmxyz/reth.git", rev = "b25f32a977b489f9b84254c7811a2a5a25a81369",default-features = false }
+reth-ethereum = { git = "https://github.com/paradigmxyz/reth.git", rev = "b2eb061fe2f9928097cbedf7a52663d7616c2abe", features = ["test-utils", "node", "evm", "pool"] }
+reth-tracing = {  git = "https://github.com/paradigmxyz/reth.git", rev = "b2eb061fe2f9928097cbedf7a52663d7616c2abe",default-features = false }
 alloy-genesis = { version = "1.4.3", default-features = false }
 alloy-evm = { version = "0.25.2", default-features = false }
 alloy-primitives = { version = "1.5.2", default-features = false }
