@@ -1,6 +1,6 @@
 //! Example: Handling basefee constraint violations in `reth_transaction_pool::Pool`.
 //!
-//! Diagram:
+//! Diagram: https://github.com/abhi3700/protocol_bytes/blob/621e559a318d012e8903066a96e89cb115446f6c/excalidraw/reth/basefee_constraints.png
 //!
 //! This example demonstrates how EIP-1559 transactions are classified by the
 //! transaction pool depending on the current `pending_basefee` in block info.
