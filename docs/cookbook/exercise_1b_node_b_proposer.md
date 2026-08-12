@@ -1,4 +1,4 @@
-# Exercise 2: Node B Proposes the Second Transaction
+# Exercise 1b: Node B Proposes the Second Transaction
 
 ## Background
 

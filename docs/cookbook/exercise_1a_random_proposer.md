@@ -1,4 +1,4 @@
-# Exercise 1: Random Proposer in a Star Network
+# Exercise 1a: Random Proposer in a Star Network
 
 ## Background
 
