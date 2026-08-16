@@ -64,6 +64,8 @@ replacement transaction underpriced
 
 ## Solution
 
+[Commit](https://github.com/abhi3700/reth/commit/b44273769a2ee0c0c3d2709e4c4ecea26463c310)
+
 ```rust
 //! Exercise 2a:
 //! Observe Reth's default transaction replacement threshold.
